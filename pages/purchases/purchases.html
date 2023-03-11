@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market</title>
+    <link rel="stylesheet" href="css/purchases-dist.css">
+</head>
+<body>
+    <header>
+        <a class="casher" href="../../index.html">Casher</a>
+        <h1>Purchases</h1>
+        <a class="sales" href="../sales/sales.html">Sales</a>
+    </header>
+    <div class="cruds">
+        <div class="inputs">
+            <input type="text" name="" value="" id="title" placeholder="Title">
+            <input onkeyup="getTotal();" type="text" name="" value="" id="count" placeholder="Count">
+            <input onkeyup="getTotal();" type="text" name="" value="" id="price-buy" placeholder="Buy Price">
+            <input onkeyup="getTotal();" type="text" name="" value="" id="price-sale" placeholder="Sale Price">
+            <div class="priceOnly">
+                <input onkeyup="getTotal();" type="text" name="" value="" id="quantity" placeholder="Quantity">
+                <input onkeyup="getTotal();" type="text" name="" value="" id="price" placeholder="price">
+            </div>
+            <button onclick="creatProduct();" id="create">Create Product</button>
+        </div>
+        <div class="output">
+            <span id="total"></span>
+            <span id="gain-trading"></span>
+            <span id="quan-total"></span>
+            <span id="gain-normal"></span>
+        </div>
+        <div class="divDeletAll">
+
+        </div>
+        <table border="1">
+            <tr>
+                <th colspan="11" class="headTable">All Products</th>
+            </tr>
+            <tr>
+                <th>No</th>
+                <th>Title</th>
+                <th>Quantity</th>
+                <th>Buy Price</th>
+                <th>Sale Price</th>
+                <th>One Price</th>
+                <th>Update</th>
+                <th>add</th>
+                <th>Delete</th>
+            </tr>
+            <tbody class="tbody">
+                
+                
+            </tbody>
+        </table>
+    </div>
+    <script src="js/purchases-dist.js"></script>
+</body>
+</html>

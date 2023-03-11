@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market View</title>
+    <link rel="stylesheet" href="css/casher-dist.css">
+</head>
+<body>
+    <header>
+        <a class="purchases" href="pages/purchases/purchases.html">Purchases</a>
+        <h1>Casher</h1>
+        <a class="sales" href="pages/sales/sales.html">Sales</a>
+
+    </header>
+
+    <div class="view">
+        <div class="invoice">
+            <div class="inputs">
+                <input type="text" value="" placeholder="Title Product" name="" id="title" readonly>
+                <input type="text" value=""placeholder="Price" name="" id="price" readonly>
+                <input type="text" value="" placeholder="Quantity" name="" id="quantity">
+                <button onclick="insertItems();" id="Packet">Add</button>
+                <button onclick="save();">Save</button>
+                <button onclick="clear();">Clear</button>
+                <button >ياسين</button>
+
+
+            </div>
+            <table border="">
+                <tr>
+                    <th>No</th>
+                    <th>Title</th>
+                    <th>Quan</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                    
+
+                </tr>
+                <tbody class="tbody">
+                    
+                </tbody>
+            </table>
+        </div>
+        <div class="products">
+            <input onkeyup="searchPro(this.value);" type="text" value="" placeholder="Search" name="" id="search">
+            <div id="allProducts">
+
+            </div>
+
+            
+        </div>
+        
+    </div>
+    
+    
+    <script src="js/casher-dist.js"></script>
+</body>
+</html>
